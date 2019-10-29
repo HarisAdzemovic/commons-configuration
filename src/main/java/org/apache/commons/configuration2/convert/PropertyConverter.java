@@ -390,7 +390,7 @@ final class PropertyConverter
         {
             return (BigDecimal) n;
         }
-        return new BigDecimal(n.doubleValue());
+        return BigDecimal.valueOf(n.doubleValue());
     }
 
     /**
